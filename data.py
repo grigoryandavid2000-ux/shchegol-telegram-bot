@@ -11,6 +11,7 @@ PROJECT_DIR = BASE_DIR.parent
 LOCAL_MENU_JSON_PATH = BASE_DIR / "assets" / "menu-items-full.json"
 SITE_MENU_JSON_PATH = PROJECT_DIR / "assets" / "menu-items-full.json"
 MENU_JSON_PATH = LOCAL_MENU_JSON_PATH if LOCAL_MENU_JSON_PATH.exists() else SITE_MENU_JSON_PATH
+APP_VERSION = "2026-06-15-cart-site"
 
 
 CATEGORY_ORDER = ["coffee", "dessert", "food", "seasonal", "cold", "noncoffee"]
