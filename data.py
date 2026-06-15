@@ -71,7 +71,7 @@ SOCIAL_LINKS = {
     "Instagram": "https://www.instagram.com/schegolcoffee/",
 }
 
-SITE_URL = ""
+SITE_URL = "https://grigoryandavid2000-ux.github.io/shchegol-coffee-site/"
 
 ABOUT_TEXT = (
     "<b>ℹ️ О кофейне «Щегол»</b>\n\n"
