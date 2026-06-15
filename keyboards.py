@@ -8,7 +8,7 @@ from aiogram.types import (
 )
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-from data import BRANCHES, CATEGORY_ORDER, MENU_BY_CATEGORY, SOCIAL_LINKS, category_label
+from data import BRANCHES, CATEGORY_ORDER, MENU_BY_CATEGORY, SITE_URL, SOCIAL_LINKS, category_label
 
 
 MAIN_BUTTONS = [
@@ -16,17 +16,14 @@ MAIN_BUTTONS = [
     ["🎁 Моя карта гостя", "⭐ Отзывы"],
     ["📍 Филиалы", "🔥 Новинки недели"],
     ["ℹ️ О кофейне", "☎️ Контакты"],
-    ["❓ Справка"],
+    ["❓ Справка", "🌐 Перейти на сайт"],
     ["🛒 Корзина"],
 ]
 
 
 def main_menu_keyboard() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
-        keyboard=[
-            [KeyboardButton(text=button) for button in row]
-            for row in MAIN_BUTTONS
-        ],
+        keyboard=[[KeyboardButton(text=button) for button in row] for row in MAIN_BUTTONS],
         resize_keyboard=True,
         input_field_placeholder="Выберите раздел",
     )
@@ -51,7 +48,10 @@ def main_inline_keyboard() -> InlineKeyboardMarkup:
                 InlineKeyboardButton(text="ℹ️ О кофейне", callback_data="about"),
                 InlineKeyboardButton(text="☎️ Контакты", callback_data="contacts"),
             ],
-            [InlineKeyboardButton(text="❓ Справка", callback_data="help")],
+            [
+                InlineKeyboardButton(text="❓ Справка", callback_data="help"),
+                InlineKeyboardButton(text="🌐 Перейти на сайт", url=SITE_URL),
+            ],
             [InlineKeyboardButton(text="🛒 Корзина", callback_data="cart")],
         ]
     )
@@ -60,10 +60,7 @@ def main_inline_keyboard() -> InlineKeyboardMarkup:
 def categories_keyboard(prefix: str) -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     for category in CATEGORY_ORDER:
-        builder.button(
-            text=category_label(category),
-            callback_data=f"{prefix}_cat:{category}",
-        )
+        builder.button(text=category_label(category), callback_data=f"{prefix}_cat:{category}")
     builder.button(text="В главное меню", callback_data="main")
     builder.adjust(2, 2, 2, 1)
     return builder.as_markup()
@@ -202,7 +199,7 @@ def help_keyboard() -> InlineKeyboardMarkup:
 
 def contacts_keyboard() -> InlineKeyboardMarkup:
     rows = []
-    for branch_id, branch in BRANCHES.items():
+    for _, branch in BRANCHES.items():
         if branch.get("yandex_url"):
             rows.append([InlineKeyboardButton(text=f"Яндекс: {branch['title']}", url=branch["yandex_url"])])
         if branch.get("dgis_url"):
@@ -210,6 +207,8 @@ def contacts_keyboard() -> InlineKeyboardMarkup:
     for title, url in SOCIAL_LINKS.items():
         if url:
             rows.append([InlineKeyboardButton(text=title, url=url)])
+    if SITE_URL:
+        rows.append([InlineKeyboardButton(text="Перейти на сайт", url=SITE_URL)])
     rows.append([InlineKeyboardButton(text="В главное меню", callback_data="main")])
     return InlineKeyboardMarkup(inline_keyboard=rows)
 
