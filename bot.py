@@ -31,13 +31,13 @@ from data import (
     validate_menu_counts,
 )
 from database import (
-    add_cart_item,
     clear_cart,
     create_order,
     get_cart,
     get_loyalty,
     increment_loyalty,
     init_db,
+    upsert_cart_item,
     upsert_user,
 )
 from keyboards import (
@@ -496,7 +496,7 @@ async def help_message(message: Message) -> None:
     await send_clean(message, HELP_TEXT, reply_markup=help_keyboard())
 
 
-@dp.message(F.text == "🌐 Перейти на сайт")
+@dp.message(F.text == "🌐 Сайт")
 async def site_message(message: Message) -> None:
     upsert_user(message.from_user.id, message.from_user.first_name, message.from_user.username)
     await send_clean(
@@ -766,7 +766,7 @@ async def quantity_callback(call: CallbackQuery) -> None:
         unit_price = item["price_value"]
         options = {}
 
-    add_cart_item(
+    upsert_cart_item(
         user_id=call.from_user.id,
         item_id=item["id"],
         title=item["title"],
