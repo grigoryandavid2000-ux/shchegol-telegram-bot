@@ -496,6 +496,16 @@ async def help_message(message: Message) -> None:
     await send_clean(message, HELP_TEXT, reply_markup=help_keyboard())
 
 
+@dp.message(F.text == "🌐 Перейти на сайт")
+async def site_message(message: Message) -> None:
+    upsert_user(message.from_user.id, message.from_user.first_name, message.from_user.username)
+    await send_clean(
+        message,
+        f"<b>Сайт кофейни «Щегол»</b>\n\nОткрыть сайт можно здесь:\n{SITE_URL}",
+        reply_markup=main_inline_keyboard(),
+    )
+
+
 @dp.callback_query(F.data == "main")
 async def main_callback(call: CallbackQuery) -> None:
     await show_main(call)
