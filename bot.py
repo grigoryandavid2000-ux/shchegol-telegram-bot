@@ -17,6 +17,7 @@ from dotenv import load_dotenv
 
 from data import (
     ABOUT_TEXT,
+    APP_VERSION,
     BRANCHES,
     CATEGORY_ORDER,
     MENU_BY_ID,
@@ -873,7 +874,9 @@ async def fallback(message: Message) -> None:
 
 
 async def healthcheck(_: web.Request) -> web.Response:
-    return web.json_response({"status": "ok", "service": "shchegol-telegram-bot"})
+    return web.json_response(
+        {"status": "ok", "service": "shchegol-telegram-bot", "version": APP_VERSION}
+    )
 
 
 async def start_health_server() -> web.AppRunner | None:
