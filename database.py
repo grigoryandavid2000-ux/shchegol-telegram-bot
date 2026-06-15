@@ -140,6 +140,46 @@ def add_cart_item(
         )
 
 
+def upsert_cart_item(
+    user_id: int,
+    item_id: str,
+    title: str,
+    quantity: int,
+    unit_price: int | None,
+    options: dict[str, Any] | None = None,
+) -> None:
+    ensure_user(user_id)
+    options_json = json.dumps(options or {}, ensure_ascii=False, sort_keys=True)
+    with connect() as conn:
+        existing = conn.execute(
+            """
+            SELECT id, quantity
+            FROM carts
+            WHERE user_id = ?
+              AND item_id = ?
+              AND IFNULL(unit_price, -1) = IFNULL(?, -1)
+              AND options_json = ?
+            ORDER BY id
+            LIMIT 1
+            """,
+            (user_id, item_id, unit_price, options_json),
+        ).fetchone()
+        if existing:
+            conn.execute(
+                "UPDATE carts SET quantity = quantity + ? WHERE id = ?",
+                (quantity, existing["id"]),
+            )
+            return
+
+        conn.execute(
+            """
+            INSERT INTO carts (user_id, item_id, title, quantity, unit_price, options_json)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (user_id, item_id, title, quantity, unit_price, options_json),
+        )
+
+
 def clear_cart(user_id: int) -> None:
     ensure_user(user_id)
     with connect() as conn:
