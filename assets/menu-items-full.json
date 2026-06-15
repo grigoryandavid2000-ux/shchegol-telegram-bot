@@ -1,0 +1,389 @@
+﻿[
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Эспрессо",
+        "price":  "200",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-60c367c931.jpg",
+        "desc":  "Классический эспрессо на зерне кофейни."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Американо",
+        "price":  "230",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-5630372326.jpg",
+        "desc":  "Эспрессо и горячая вода, чистый кофейный вкус без молока."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Фильтр 0.2",
+        "price":  "230",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-a401a4eea8.jpg",
+        "desc":  "Фильтр-кофе объёмом 200 мл."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Фильтр 0.3",
+        "price":  "260",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-0c609f3f5d.jpg",
+        "desc":  "Фильтр-кофе объёмом 300 мл."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "v-60",
+        "price":  "350",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-67e0f14cbe.jpg",
+        "desc":  "Альтернативный способ заваривания для тех, кто выбирает вкус зерна."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Флэт Уайт",
+        "price":  "300",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-a392eed4ec.jpg",
+        "desc":  "Более насыщенный молочный кофе на базе эспрессо."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Капучино 0.2",
+        "price":  "280",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-1b8dd00b0e.jpg",
+        "desc":  "Капучино 200 мл: эспрессо и молоко."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Капучино 0.3",
+        "price":  "330",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-4bc4051428.jpg",
+        "desc":  "Капучино 300 мл: эспрессо и молоко."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Латте",
+        "price":  "330",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-ca6b4e7eba.jpg",
+        "desc":  "Мягкий молочный кофе."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Раф",
+        "price":  "370",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-f97acfe2a1.jpg",
+        "desc":  "Сливочный кофейный напиток."
+    },
+    {
+        "category":  "coffee",
+        "label":  "Кофе",
+        "kind":  "coffee",
+        "title":  "Любимый напиток Щегла",
+        "price":  "420",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-9ea28ea6d6.jpg",
+        "desc":  "Фирменный напиток кофейни."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Брауни",
+        "price":  "290",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-0c35a5a8c6.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Блонди",
+        "price":  "220",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-dc2d2be1bf.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Трюффель",
+        "price":  "180",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-cca34722d8.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Баноффи",
+        "price":  "370",
+        "image":  "assets/yandex/nevsky-gallery/nevsky-gallery-bbea8f8f25.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Лимонный тарт",
+        "price":  "350",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-0d91a88330.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Вишневый пирог",
+        "price":  "340",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-e8665c1187.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Печенье с темным шоколадом и солью",
+        "price":  "160",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-be840514ad.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Печенье с белым шоколадом и клюквой",
+        "price":  "160",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-aed2c80548.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Канеле",
+        "price":  "190",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-4ca70c41fe.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Круассан",
+        "price":  "130",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-0c4ca4e833.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Лимонный кекс",
+        "price":  "190",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-ec2a3fa299.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Банановый хлеб",
+        "price":  "190",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-a4162dfbdd.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "dessert",
+        "label":  "Десерты",
+        "kind":  "food",
+        "title":  "Баскский чизкейк с черникой",
+        "price":  "400",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-9d8ac29234.jpg",
+        "desc":  "Десерты из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "food",
+        "label":  "Еда",
+        "kind":  "food",
+        "title":  "Сырники",
+        "price":  "420",
+        "image":  "assets/yandex/nevsky-gallery/nevsky-gallery-074d428384.jpg",
+        "desc":  "Сырники из меню кофейни. На Красноармейской в меню указаны сырники с манго и сметаной."
+    },
+    {
+        "category":  "food",
+        "label":  "Еда",
+        "kind":  "food",
+        "title":  "Сэндвич с курицей",
+        "price":  "350",
+        "image":  "assets/yandex/nevsky-reviews/nevsky-reviews-1f69736783.jpg",
+        "desc":  "Сэндвич с курицей из меню кофейни."
+    },
+    {
+        "category":  "food",
+        "label":  "Еда",
+        "kind":  "food",
+        "title":  "Сэндвич с тунцом",
+        "price":  "350",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-ddb01e6c41.jpg",
+        "desc":  "Сэндвич с тунцом из меню кофейни."
+    },
+    {
+        "category":  "noncoffee",
+        "label":  "Не кофе",
+        "kind":  "coffee",
+        "title":  "Какао",
+        "price":  "350",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-bc50ca158a.jpg",
+        "desc":  "Не кофе из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "noncoffee",
+        "label":  "Не кофе",
+        "kind":  "coffee",
+        "title":  "Таро",
+        "price":  "350",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-9a8496c2fa.jpg",
+        "desc":  "Не кофе из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "noncoffee",
+        "label":  "Не кофе",
+        "kind":  "coffee",
+        "title":  "Апельсиновый фреш",
+        "price":  "380",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-48cff5ed8d.jpg",
+        "desc":  "Не кофе из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "noncoffee",
+        "label":  "Не кофе",
+        "kind":  "coffee",
+        "title":  "Маття",
+        "price":  "370",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-e2a7ce952e.jpg",
+        "desc":  "Не кофе из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "noncoffee",
+        "label":  "Не кофе",
+        "kind":  "coffee",
+        "title":  "Чай",
+        "price":  "300",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-3f2eb9f223.jpg",
+        "desc":  "Не кофе из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "cold",
+        "label":  "Холодные",
+        "kind":  "coffee",
+        "title":  "Айс-латте",
+        "price":  "350",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-614327a368.jpg",
+        "desc":  "Холодные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "cold",
+        "label":  "Холодные",
+        "kind":  "coffee",
+        "title":  "Айс маття",
+        "price":  "370",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-a1f724c4d2.jpg",
+        "desc":  "Холодные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "cold",
+        "label":  "Холодные",
+        "kind":  "coffee",
+        "title":  "Эспрессо-тоник",
+        "price":  "370",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-f0243e5034.jpg",
+        "desc":  "Холодные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "cold",
+        "label":  "Холодные",
+        "kind":  "coffee",
+        "title":  "Клюквенный эспрессо-тоник",
+        "price":  "390",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-73a0fa1459.jpg",
+        "desc":  "Холодные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "cold",
+        "label":  "Холодные",
+        "kind":  "coffee",
+        "title":  "Бамбл",
+        "price":  "420",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-fe20a15540.jpg",
+        "desc":  "Холодные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Клубничный айс-латте",
+        "price":  "390",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-b1af752d5c.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Жасминовая айс-матча",
+        "price":  "420",
+        "image":  "assets/yandex/krasno-menu/krasno-menu-6da9d141a2.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Гранатовый бамбл",
+        "price":  "420",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-c50768d326.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Холодный чай груша-жасмин",
+        "price":  "420",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-b3a096c9e4.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Лимонад таро-клюква",
+        "price":  "390",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-7294b1b87f.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    },
+    {
+        "category":  "seasonal",
+        "label":  "Сезонные",
+        "kind":  "coffee",
+        "title":  "Лимонад клубника - ревень",
+        "price":  "420",
+        "image":  "assets/yandex/nevsky-menu/nevsky-menu-f8afce8f54.jpg",
+        "desc":  "Сезонные из меню кофейни «Щегол»."
+    }
+]
