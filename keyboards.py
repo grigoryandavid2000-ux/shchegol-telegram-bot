@@ -16,7 +16,7 @@ MAIN_BUTTONS = [
     ["🎁 Моя карта гостя", "⭐ Отзывы"],
     ["📍 Филиалы", "🔥 Новинки недели"],
     ["ℹ️ О кофейне", "☎️ Контакты"],
-    ["❓ Справка", "🌐 Перейти на сайт"],
+    ["❓ Справка", "🌐 Сайт"],
     ["🛒 Корзина"],
 ]
 
@@ -50,7 +50,7 @@ def main_inline_keyboard() -> InlineKeyboardMarkup:
             ],
             [
                 InlineKeyboardButton(text="❓ Справка", callback_data="help"),
-                InlineKeyboardButton(text="🌐 Перейти на сайт", url=SITE_URL),
+                InlineKeyboardButton(text="🌐 Сайт", url=SITE_URL),
             ],
             [InlineKeyboardButton(text="🛒 Корзина", callback_data="cart")],
         ]
@@ -208,7 +208,7 @@ def contacts_keyboard() -> InlineKeyboardMarkup:
         if url:
             rows.append([InlineKeyboardButton(text=title, url=url)])
     if SITE_URL:
-        rows.append([InlineKeyboardButton(text="Перейти на сайт", url=SITE_URL)])
+        rows.append([InlineKeyboardButton(text="Сайт", url=SITE_URL)])
     rows.append([InlineKeyboardButton(text="В главное меню", callback_data="main")])
     return InlineKeyboardMarkup(inline_keyboard=rows)
 
